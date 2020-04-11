@@ -1,0 +1,64 @@
+.form1{
+  text-align: center;
+    padding-top:20px;
+    padding-bottom:20px;
+    width:500px;
+    
+    /* font-family: 'Bree Serif', serif; */
+    
+  }
+  
+  .profile-intro{
+    margin-top:8px;
+  }
+  
+  .img-circle{
+    height:300px;
+    width:300px;
+    border-radius:150px;
+  }
+  
+  .list-group{
+    font-family: 'Amaranth', sans-serif;
+    margin:5px;
+  }
+  
+  .card{
+    box-shadow:  antiquewhite 5px 5px;
+    margin:15px;
+  }
+  
+  .card-text{
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 25px;
+  }
+  
+  .card-title{
+    font-family: 'Bree Serif', serif;
+    text-transform: uppercase;
+  }
+  
+  .btn{
+    margin:2px;
+    font-family: 'Amaranth', sans-serif;
+  }
+  
+  .profile-info{
+  box-shadow: 1px 1px 1px 1px black;
+  }
+  
+  .repo-title{
+    text-align: center;
+    margin:10px;
+    font-family: 'Amaranth', sans-serif;
+  }
+  
+  .profileInfo{
+    margin-top:5px;
+  }
+  
+  .profile-info{
+    padding-top:10px;
+  }
+  
+  
