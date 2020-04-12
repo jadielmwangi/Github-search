@@ -1,5 +1,5 @@
 export class Repos {
     public  userName:string;
-    public repos: any;
+    public repository: any;
     public profile: any;
 }
