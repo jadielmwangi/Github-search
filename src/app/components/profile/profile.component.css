@@ -2,7 +2,7 @@
   text-align: center;
     padding-top:20px;
     padding-bottom:20px;
-    width:500px;
+    width:auto;
     
     /* font-family: 'Bree Serif', serif; */
     
@@ -18,10 +18,10 @@
     border-radius:150px;
   }
   
-  .list-group{
+  /* .list-group{
     font-family: 'Amaranth', sans-serif;
     margin:5px;
-  }
+  } */
   
   .card{
     box-shadow:  antiquewhite 5px 5px;
@@ -37,7 +37,7 @@
     font-family: 'Bree Serif', serif;
     text-transform: uppercase;
   }
-  
+   
   .btn{
     margin:2px;
     font-family: 'Amaranth', sans-serif;

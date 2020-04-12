@@ -1,7 +1,7 @@
 <form action="">
     <div class="form-group" class="form1">
   
-      <input type="text " class="form-control" placeholder="Enter UserName " [(ngModel)]="username" name="username"  (keyup)="findProfile()">
+      <input type="text " class="form-control" placeholder="Enter githubUserName " [(ngModel)]="username" name="username"  (keyup)="findProfile()">
     </div>
   </form>
   
@@ -13,8 +13,8 @@
                 <div class="container">
                     <div class="row" class="profile-intro">
                       {{profile.name }} <small> ({{profile.login}}) </small>
-                       <span *ngIf="profile.company">, works at {{profile.company}} </span>
-                       {{profile.location}}
+                       <!-- <span *ngIf="profile.company">, works at {{profile.company}} </span>
+                       {{profile.location}} -->
                     </div>
                     </div>
                   </div>
@@ -22,18 +22,20 @@
           <div class="col-md-2">
             <ul class="list-group">
               <li class="list-group-items" *ngIf="profile.bio"> {{profile.bio}} </li>
-              <li class="list-group-items" *ngIf="profile.hireable"> Available for Hire</li>
-              <li class="list-group-items" *ngIf="profile.blog"> {{profile.blog}} </li>
+              <!-- <li class="list-group-items" *ngIf="profile.hireable"> Available for Hire</li> -->
+              <!-- <li class="list-group-items" *ngIf="profile.blog"> {{profile.blog}} </li> -->
               <!-- <li class="list-group-items" *ngIf="profile.email"><a href="emailto:{{profile.email}}"> {{profile.email}}</a> </li> -->
             </ul>
           </div>
           <div class="col-md-6">
             <div class="profileInfo">
               <p>
-                <button type="button" class="btn btn-primary">{{profile.followers}} Followers</button>
-                <button type="button" class="btn btn-success"> Following {{profile.following}} </button>
-                <button type="button" class="btn btn-info">{{profile.public_gists}} Public gists</button>
-                <button type="button" class="btn btn-secondary">{{profile.public_repos}} Public Repos</button>
+                <button type="button" class="btn btn-success">{{profile.public_repos}} Public Repositories</button>
+                <button type="button" class="btn btn-secondary"> Github Following {{profile.following}} </button>
+                <button type="button" class="btn btn-primary">{{profile.followers}} Github Followers</button>
+                <!-- <button type="button" class="btn btn-secondary"> Following {{profile.following}} </button> -->
+                <!-- <button type="button" class="btn btn-primary">{{profile.public_gists}} Public gists</button> -->
+                <!-- <button type="button" class="btn btn-secondary">{{profile.public_repos}} Public Repos</button> -->
               </p>
               <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-success btn-sm">View Profile</a></p>
             </div>
@@ -44,13 +46,13 @@
       </div>
   
               <div class="container">
-                  <h3 class="repo-title">Repositories</h3>
+                  <h3 class="repo-title">Repositories created by {{username}}</h3>
                 <div class="card" *ngFor="let repo of repos">
                   <div class="card-body">
                     <h4 class="card-title">{{repo.name}} </h4>
-                    <p>Created: {{repo.created_at | dateAgo}}</p>
+                    <h5>This project was Created on: {{repo.created_at | onDate}}</h5>
                     <p  appHighlight *ngIf='repo.description' class="card-text">{{repo.description}}</p>
-                    <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-info">View this project</a>
+                    <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-info">View this project on ghpages:</a>
                   </div>
                   </div>
                 </div>

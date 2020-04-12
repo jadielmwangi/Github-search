@@ -15,7 +15,7 @@
 import {Pipe, PipeTransform} from '@angular/core';
 
 @Pipe({
-    name: 'dateAgo',
+    name: 'onDate',
     pure: true
 })
 export class  DateCountPipe  implements PipeTransform {
@@ -25,7 +25,7 @@ export class  DateCountPipe  implements PipeTransform {
             const seconds = Math.floor((+new Date() - +new Date(value)) / 1000);
             if (seconds < 59)
                 return 'Just now';
-            const intervals = {
+            const timeinterval = {
                 'year': 31536000,
                 'month': 2592000,
                 'week': 604800,
@@ -35,8 +35,8 @@ export class  DateCountPipe  implements PipeTransform {
                 'second': 1
             };
             let count;
-            for (const j in intervals) {
-                count = Math.floor(seconds / intervals[j]);
+            for (const j in timeinterval) {
+                count = Math.floor(seconds / timeinterval[j]);
                 if (count > 0)
                     if (count === 1) {
                         return count + ' ' + j + ' ago';
