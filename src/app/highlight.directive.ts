@@ -1,14 +1,3 @@
-// import { Directive } from '@angular/core';
-
-// @Directive({
-//   selector: '[appHighlight]'
-// })
-// export class HighlightDirective {
-
-//   constructor() { }
-
-// }
-
 
 import { Directive, ElementRef, HostListener } from '@angular/core';
 
@@ -17,19 +6,14 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
 })
 export class HighlightDirective {
 
-  constructor(private elem: ElementRef) {
-    this.elem.nativeElement.style.backgroundColor = '';
+  constructor(private elem: ElementRef) { }
 
+  @HostListener("click") onClicks() {
+    this.textDeco("highlight")
   }
-  @HostListener('mouseenter') onMouseEnter() {
-    this.highlight('blue');
-  }
-  @HostListener('mouseleave') onMouseLeave() {
-    this.highlight("");
-  }
-  
-  private highlight(color: string) {
-    this.elem.nativeElement.style.backgroundColor = color;
+  private textDeco(action: string) {
+    this.elem.nativeElement.style.backgroundColor = 'blue';
+
   }
 
 }
