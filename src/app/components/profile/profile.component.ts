@@ -10,8 +10,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProfileComponent implements OnInit {
 
-  username:string;
-  repos: any;
+  userName:string;
+  // repos: any;
+  repository: any;
   profile: any;
 
   constructor(private httpService:HttpService){
@@ -19,17 +20,17 @@ export class ProfileComponent implements OnInit {
   }
 
   findProfile(){
-    this.httpService.updateProfile(this.username);
+    this.httpService.updateProfile(this.userName);
     this.httpService.getProfileInfo().subscribe(profile => this.profile = profile);
 
-    this.httpService.getProfileRepos().subscribe(repos => this.repos = repos);
+    this.httpService.getProfileRepos().subscribe(repository => this.repository = repository);
   }
 
   ngOnInit() {
     this.httpService.updateProfile('jadielmwangi');
     this.httpService.getProfileInfo().subscribe(profile => this.profile = profile);
 
-    this.httpService.getProfileRepos().subscribe(repos => this.repos = repos);
+    this.httpService.getProfileRepos().subscribe(repository => this.repository = repository);
   }
 
 }

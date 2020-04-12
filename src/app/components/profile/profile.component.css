@@ -1,10 +1,8 @@
-.form1{
+.firstform{
   text-align: center;
     padding-top:20px;
     padding-bottom:20px;
     width:auto;
-    
-    /* font-family: 'Bree Serif', serif; */
     
   }
   
@@ -13,52 +11,33 @@
   }
   
   .img-circle{
-    height:300px;
-    width:300px;
-    border-radius:150px;
+    border-radius:140px;
+    height:350px;
+    width:350px;
+    border-radius:170px;
   }
   
-  /* .list-group{
-    font-family: 'Amaranth', sans-serif;
-    margin:5px;
-  } */
-  
-  .card{
-    box-shadow:  antiquewhite 5px 5px;
-    margin:15px;
-  }
   
   .card-text{
-    font-family: 'ZCOOL XiaoWei', serif;
+    font-weight: bold;
     font-size: 25px;
   }
   
   .card-title{
-    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
   }
    
   .btn{
     margin:2px;
-    font-family: 'Amaranth', sans-serif;
+    font-weight: bold;
   }
   
-  .profile-info{
-  box-shadow: 1px 1px 1px 1px black;
-  }
   
-  .repo-title{
-    text-align: center;
+  .profile2{
+    margin-top:5px;
     margin:10px;
     font-family: 'Amaranth', sans-serif;
   }
-  
-  .profileInfo{
-    margin-top:5px;
-  }
-  
-  .profile-info{
-    padding-top:10px;
-  }
-  
-  
+    

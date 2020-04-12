@@ -1,6 +1,6 @@
 export class Users {
-    public  username:string;
-    public repos: any;
+    public  userName:string;
+    public repository: any;
     public profile: any;
    
 }
