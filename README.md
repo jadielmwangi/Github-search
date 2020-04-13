@@ -1,11 +1,11 @@
 # Git-search Application
-Git-search is a web application where users enter a GitHub username into a form, submit, and see names and descriptions repositories created.
+Git-search is a web application where users enter a GitHub username into a form, submit, and see names and descriptions of repositories created in Github.
 
 ## Description 
-Git-search is a web application where users enter a GitHub username into a form, submit, and see names and descriptions of repositories created.
+Git-search is a web application where users enter a GitHub username into a form, submit, and see names and descriptions of repositories created in Github.
 
 
-## Behaviour Driven Development(BDD)
+## Behaviour Driven Development (BDD)
 
 * On Loadpage,scroll and see the different types of  repositories  that  been created.
 * Click on Search Username bar  and enter the name of Github user to view his/her Repositories.
@@ -18,7 +18,7 @@ Git-search is a web application where users enter a GitHub username into a form,
 * Run the command ng serve --open to serve your app
 
 ## Project Live link
-
+*Live link to the project: https://jadielmwangi.github.io/Github-search/
 
 ## Technologies used 
 * Angular
