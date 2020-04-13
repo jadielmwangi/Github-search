@@ -12,8 +12,8 @@
             <div class="card" *ngFor='let item of repoitems'>
                 <div class="card-body">
                     <a href="{{item.html_url}}" target="_blank"><strong>{{item.name}}</strong></a>
-                    <p><strong>Created:</strong> {{item.created_at|onDate}}</p>
-                    <p><strong>Created by:</strong> {{item.owner.login}}</p>
+                    <p><span class="created">Created on :</span> {{item.created_at|onDate}}</p>
+                    <p><span class="">Created by:</span> {{item.owner.login}}</p>
                     <p>{{item.description}}</p>
                 </div>
             </div>

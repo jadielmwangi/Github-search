@@ -9,18 +9,19 @@ import { HttpService } from 'src/app/services/http.service';
 })
 export class RepoComponent implements OnInit {
   repoitems: any[];
-  repoName:string= "pizza";
+  repoName:string= "";
 
   constructor(private httpService: HttpService) {
 
   }
 
-  findRepo(){
+
+  ngOnInit() {
     this.httpService.updateProfile(this.repoName);
     this.httpService.getProfileRepos().subscribe(repo => this.repoitems= repo["items"]);
   }
 
-  ngOnInit() {
+  findRepo(){
     this.httpService.updateProfile(this.repoName);
     this.httpService.getProfileRepos().subscribe(repo => this.repoitems= repo["items"]);
   }

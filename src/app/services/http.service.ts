@@ -16,7 +16,6 @@ export class HttpService {
 
 
   constructor(private http:HttpClient) {
-    console.log("Service is now ready.");
     this.userName = 'jadielmwangi';
    }
 

@@ -12,11 +12,10 @@
   
   .img-circle{
     border-radius:140px;
-    height:350px;
-    width:350px;
-    border-radius:170px;
+    height:280px;
+    width:280px;
+    border-radius:130px;
   }
-  
   
   .card-text{
     font-weight: bold;
@@ -30,8 +29,9 @@
   }
    
   .btn{
-    margin:2px;
+    margin:5px;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   
